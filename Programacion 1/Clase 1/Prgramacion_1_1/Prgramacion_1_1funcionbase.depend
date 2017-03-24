@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1490316260 source:f:\code_utn_fra_2017\programacion 1\clase 1\prgramacion_1_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcion1.h"
+	"verificacionnum.h"
+
+1490315244 f:\code_utn_fra_2017\programacion 1\clase 1\prgramacion_1_1\funcion1.h
+
+1490315262 source:f:\code_utn_fra_2017\programacion 1\clase 1\prgramacion_1_1\funcion1.c
+
+1490315854 source:f:\code_utn_fra_2017\programacion 1\clase 1\prgramacion_1_1\verificacionnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1490314022 f:\code_utn_fra_2017\programacion 1\clase 1\prgramacion_1_1\verificacionnum.h
+

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1492914989 source:c:\users\mandrada\documents\utn prog 2017\code_utn_fra_2017\laboratorio de computacion 1\tp_02\tp_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1492899153 c:\users\mandrada\documents\utn prog 2017\code_utn_fra_2017\laboratorio de computacion 1\tp_02\tp_2\funciones.h
+
+1492913401 source:c:\users\mandrada\documents\utn prog 2017\code_utn_fra_2017\laboratorio de computacion 1\tp_02\tp_2\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+

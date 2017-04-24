@@ -99,10 +99,13 @@ int main()
                     verDni=verificarDni(buffer);
                     lenDni=strlen(buffer);
                 }
-                lista[i].dni=buffer;
-                lista[i].estado='1';
+                lista[i].dni=atoi(buffer);
+                lista[i].estado= 1;
 
-
+                printf("%s",lista[i].nombre);
+                printf("\t%d",lista[i].edad);
+                printf("\t%d",lista[i].dni);
+                printf("\t%d",lista[i].estado);
 
 
                 //printf("\t%c\t%d\t%d\t%d",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
@@ -124,7 +127,7 @@ int main()
                     verDni=verificarDni(buffer);
                     lenDni=strlen(buffer);
                 }
-                dniABuscar=buffer;
+                dniABuscar=atoi(buffer);
 
                 indiceDniABuscar=buscarPorDni(lista, dniABuscar);
                 if(indiceDniABuscar==-1)
@@ -134,6 +137,7 @@ int main()
                 }
 
                 lista[indiceDniABuscar].estado=0;
+
 
 
                 break;

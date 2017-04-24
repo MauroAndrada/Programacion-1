@@ -14,3 +14,18 @@
 	<ctype.h>
 	"funciones.h"
 
+1493059055 source:c:\repogit\tp_laboratorio_1\tp_02\tp_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1493043983 c:\repogit\tp_laboratorio_1\tp_02\tp_2\funciones.h
+
+1493047279 source:c:\repogit\tp_laboratorio_1\tp_02\tp_2\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+

@@ -44,6 +44,9 @@ int buscarPorDni(EPersona lista[], int dniABuscar)
         {
             retornoIndice=-1;
         }
+        //printf("\%d",lista[i].dni);
+        //printf("\%d",lista[i].estado);
+        printf("\%d",retornoIndice);
     }
 
     return retornoIndice;

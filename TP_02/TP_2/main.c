@@ -17,6 +17,9 @@ int main()
     int auxEdad=0;
     int lenDni;
     int contPuestaACero=0;
+    int indVacio=0;
+    int dniABuscar;
+    int indiceDniABuscar=0;
     char buffer[60];
     EPersona lista[LEN];
 
@@ -29,7 +32,7 @@ int main()
 
     while(seguir=='s')
     {
-        printf("1- Agregar persona\n");
+        printf("\n1- Agregar persona\n");
         printf("2- Borrar persona\n");
         printf("3- Imprimir lista ordenada por  nombre\n");
         printf("4- Imprimir grafico de edades\n\n");
@@ -43,6 +46,17 @@ int main()
 //pedir nombre y verificarlo.Comprobar si no contiene numeros y si es acorde a una nombre
 
             case 1:
+
+                indVacio=obtenerEspacioLibre(lista);
+                if(indVacio<0)
+                {
+                    printf("Borrar elementos de la lista, sin lugares disponibles");
+                    break;
+                }else
+                {
+                    i=indVacio;
+                }
+
                 printf("\nIngrese nombre: ");
                 scanf("%s",buffer);
                 verNom=verificarNombre(buffer);
@@ -80,22 +94,47 @@ int main()
 
                 while(verDni==0 || lenDni>10)
                 {
-                    printf("\nIngrese DNI correctamente: ");
+                    printf("\nIngrese DNI correctamente: \n");
                     scanf("%s",buffer);
                     verDni=verificarDni(buffer);
                     lenDni=strlen(buffer);
                 }
-                strcpy(lista[i].dni,buffer);
+                lista[i].dni=buffer;
                 lista[i].estado='1';
-                i++;
 
 
-                printf("\t%c\t%d\t%d\t%d",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
+
+
+                //printf("\t%c\t%d\t%d\t%d",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
 
                 break;
 
 
             case 2:
+
+                printf("\nIngrese DNI de persona a borrar: ");
+                scanf("%s",buffer);
+                verDni=verificarDni(buffer);
+                lenDni=strlen(buffer);
+
+                while(verDni==0 || lenDni>10)
+                {
+                    printf("\nIngrese DNI correctamente: \n");
+                    scanf("%s",buffer);
+                    verDni=verificarDni(buffer);
+                    lenDni=strlen(buffer);
+                }
+                dniABuscar=buffer;
+
+                indiceDniABuscar=buscarPorDni(lista, dniABuscar);
+                if(indiceDniABuscar==-1)
+                {
+                    printf("\nNo se encuentra DNI en la lista\n");
+
+                }
+
+                lista[indiceDniABuscar].estado=0;
+
 
                 break;
 
@@ -114,7 +153,7 @@ int main()
                 break;
         }
 
-        printf("\t%s\t%s\t%s",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
+        //printf("\t%s\t%s\t%s",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
     }
 
     return 0;

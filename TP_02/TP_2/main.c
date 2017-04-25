@@ -106,7 +106,7 @@ int main()
                 printf("\t%d",lista[i].edad);
                 printf("\t%d",lista[i].dni);
                 printf("\t%d",lista[i].estado);
-
+                printf("\t%d",i);
 
                 //printf("\t%c\t%d\t%d\t%d",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
 
@@ -137,6 +137,25 @@ int main()
                 }
 
                 lista[indiceDniABuscar].estado=0;
+
+                /*printf("%s",lista[0].nombre);
+                printf("\t%d",lista[0].edad);
+                printf("\t%d",lista[0].dni);
+                printf("\t%d",lista[0].estado);
+                //printf("\t%d",0);
+
+                printf("\n%s",lista[1].nombre);
+                printf("\t%d",lista[1].edad);
+                printf("\t%d",lista[1].dni);
+                printf("\t%d",lista[1].estado);
+                //printf("\n\t%d",1);
+
+                printf("\n%s",lista[2].nombre);
+                printf("t%d",lista[2].edad);
+                printf("\t%d",lista[2].dni);
+                printf("\t%d",lista[2].estado);
+                //printf("\n\t%d",2);*/
+
 
 
 

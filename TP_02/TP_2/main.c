@@ -19,8 +19,12 @@ int main()
     int contPuestaACero=0;
     int indVacio=0;
     int dniABuscar;
+    int contIngresados=0;
     int indiceDniABuscar=0;
     char buffer[60];
+    int cont18=0;
+    int cont19e35=0;
+    int cont35=0;
     EPersona lista[LEN];
 
 
@@ -83,6 +87,17 @@ int main()
                     verEdad=verificarEdad(buffer);
                     auxEdad=atoi(buffer);
                 }
+
+                if(auxEdad<=18)
+                {
+                    cont18++;
+                }else if(auxEdad>18 || auxEdad<35)
+                {
+                    cont19e35++;
+                }else{
+                cont35++;
+                }
+
                 lista[i].edad=auxEdad;
 
 //pedir DNI y verificarlo.Comprobar si es numero y si es acorde a DNI
@@ -102,12 +117,14 @@ int main()
                 lista[i].dni=atoi(buffer);
                 lista[i].estado= 1;
 
+
                 printf("%s",lista[i].nombre);
                 printf("\t%d",lista[i].edad);
                 printf("\t%d",lista[i].dni);
                 printf("\t%d",lista[i].estado);
                 printf("\t%d",i);
 
+                contIngresados++;
                 //printf("\t%c\t%d\t%d\t%d",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
 
                 break;
@@ -115,8 +132,9 @@ int main()
 
             case 2:
 
-                printf("\nIngrese DNI de persona a borrar: ");
+                /*printf("\nIngrese DNI de persona a borrar: ");
                 scanf("%s",buffer);
+                //printf("\n%s\n",buffer);
                 verDni=verificarDni(buffer);
                 lenDni=strlen(buffer);
 
@@ -163,10 +181,21 @@ int main()
 
             case 3:
 
+                for(i=0;i<contIngresados;i++)
+                {
+                    printf("\t\n\n%s",lista[i].nombre);
+                }
+
+
                 break;
 
 
             case 4:
+                for(i=0;i<contIngresados;i++)
+                {
+
+                }
+
 
                 break;
 

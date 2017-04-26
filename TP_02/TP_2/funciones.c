@@ -114,3 +114,25 @@ int verificarDni(char buffer[])
 
 
 }
+
+
+void bubleSort(EPersona lista[])
+{
+    int i;
+    int flagSwap = 1;
+    EPersona aux;
+    while(flagSwap)
+    {
+        flagSwap = 0;
+        for(i = 0; i<20 ; i++)
+        {
+            if(strcmp(lista[i].nombre,lista[i+1].nombre) > 0)
+            {
+                aux = lista[i];
+                lista[i] = lista[i+1];
+                lista[i+1] = aux;
+                flagSwap = 1;
+            }
+        }
+    }
+}

@@ -60,5 +60,21 @@ int verificarEdad(char buffer[]);
  */
 int verificarDni(char buffer[]);
 
+/**
+ * Verifica si buffer coincide con parametros para campo nombre
+ * @param lista el array se pasa como parametro.
+ * @return 1 si es correcto, 0 si no es correcto
+ */
+
+
+ /**
+ * Ordena la lista de nombres de menor a mayor
+ * @param lista el array se pasa como parametro.
+ * @return void
+ */
+
+
+void bubleSort(EPersona lista[]);
+
 
 #endif // FUNCIONES_H_INCLUDED

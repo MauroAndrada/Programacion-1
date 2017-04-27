@@ -31,7 +31,7 @@ int main()
     for(contPuestaACero=0;contPuestaACero<20;contPuestaACero++)
     {
         lista[contPuestaACero].estado=0;
-        contPuestaACero++;
+        //contPuestaACero++;
     }
 
     while(seguir=='s')
@@ -50,16 +50,19 @@ int main()
 //pedir nombre y verificarlo.Comprobar si no contiene numeros y si es acorde a una nombre
 
             case 1:
-
+                /*for(i=0;i<19;i++)
+                {
+                    printf("\n%d",lista[i].estado);
+                }*/
                 indVacio=obtenerEspacioLibre(lista);
                 if(indVacio<0)
                 {
                     printf("Borrar elementos de la lista, sin lugares disponibles");
                     break;
-                }else
+                }/*else
                 {
                     i=indVacio;
-                }
+                }*/
 
                 printf("\nIngrese nombre: ");
                 scanf("%s",buffer);
@@ -70,7 +73,7 @@ int main()
                     scanf("%s",buffer);
                     verNom=verificarNombre(buffer);
                 }
-                strcpy(lista[i].nombre,buffer);
+                strcpy(lista[indVacio].nombre,buffer);
 
 //pedir edad y verificarlo.Comprobar si es numero y si es acorde a una edad
 
@@ -98,7 +101,7 @@ int main()
                 cont35++;
                 }
 
-                lista[i].edad=auxEdad;
+                lista[indVacio].edad=auxEdad;
 
 //pedir DNI y verificarlo.Comprobar si es numero y si es acorde a DNI
 
@@ -114,17 +117,18 @@ int main()
                     verDni=verificarDni(buffer);
                     lenDni=strlen(buffer);
                 }
-                lista[i].dni=atoi(buffer);
-                lista[i].estado= 1;
+                lista[indVacio].dni=atoi(buffer);
+                lista[indVacio].estado= 1;
 
 
-                printf("%s",lista[i].nombre);
-                printf("\t%d",lista[i].edad);
-                printf("\t%d",lista[i].dni);
-                printf("\t%d",lista[i].estado);
-                printf("\t%d",i);
+                printf("%s",lista[indVacio].nombre);
+                printf("\t%d",lista[indVacio].edad);
+                printf("\t%d",lista[indVacio].dni);
+                printf("\t%d",lista[indVacio].estado);
+                printf("\t%d",indVacio);
 
                 contIngresados++;
+
                 //printf("\t%c\t%d\t%d\t%d",lista[i].nombre,lista[i].edad,lista[i].dni,lista[i].estado);
 
                 break;
@@ -132,7 +136,7 @@ int main()
 
             case 2:
 
-                /*printf("\nIngrese DNI de persona a borrar: ");
+                printf("\nIngrese DNI de persona a borrar: ");
                 scanf("%s",buffer);
                 //printf("\n%s\n",buffer);
                 verDni=verificarDni(buffer);
@@ -156,7 +160,7 @@ int main()
 
                 lista[indiceDniABuscar].estado=0;
 
-                /*printf("%s",lista[0].nombre);
+                printf("%s",lista[0].nombre);
                 printf("\t%d",lista[0].edad);
                 printf("\t%d",lista[0].dni);
                 printf("\t%d",lista[0].estado);
@@ -172,7 +176,7 @@ int main()
                 printf("t%d",lista[2].edad);
                 printf("\t%d",lista[2].dni);
                 printf("\t%d",lista[2].estado);
-                //printf("\n\t%d",2);*/
+                //printf("\n\t%d",2);
 
 
 
@@ -180,7 +184,7 @@ int main()
                 break;
 
             case 3:
-
+                bubleSort(lista);
                 for(i=0;i<contIngresados;i++)
                 {
                     printf("\t\n\n%s",lista[i].nombre);
@@ -191,11 +195,20 @@ int main()
 
 
             case 4:
-                for(i=0;i<contIngresados;i++)
-                {
 
-                }
 
+                    for(i=0;i<cont18;i++)
+                    {
+                       printf("\n%s","*");
+                    }
+                    for(i=0;i<cont19e35;i++)
+                    {
+                       printf("\t\n%s","*");
+                    }
+                    for(i=0;i<cont35;i++)
+                    {
+                       printf("\t\n%s","*");
+                    }
 
                 break;
 

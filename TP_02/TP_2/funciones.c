@@ -17,12 +17,12 @@ int obtenerEspacioLibre(EPersona lista[])
         if(lista[i].estado==0)
         {
             returnEstado=i;
+
             break;
         }else
         {
             returnEstado = -1;
         }
-
     }
 
     return returnEstado;
@@ -39,6 +39,7 @@ int buscarPorDni(EPersona lista[], int dniABuscar)
         if(lista[i].dni==dniABuscar)
         {
             retornoIndice=i;
+            break;
 
         }else
         {
@@ -118,7 +119,7 @@ int verificarDni(char buffer[])
 
 void bubleSort(EPersona lista[])
 {
-    int i;
+    int i=0;
     int flagSwap = 1;
     EPersona aux;
     while(flagSwap)

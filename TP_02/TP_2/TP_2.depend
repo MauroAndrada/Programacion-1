@@ -29,3 +29,48 @@
 	<ctype.h>
 	"funciones.h"
 
+1493324668 source:/media/alumno/USBDEV/repo/27-04-2017/tp_laboratorio_1-master/TP_02/TP_2/funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1493324668 /media/alumno/USBDEV/repo/27-04-2017/tp_laboratorio_1-master/TP_02/TP_2/funciones.h
+
+1493324668 source:/media/alumno/USBDEV/repo/27-04-2017/tp_laboratorio_1-master/TP_02/TP_2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1493333059 source:/home/alumno/Escritorio/TP_2/funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1493333059 /home/alumno/Escritorio/TP_2/funciones.h
+
+1493333792 source:/home/alumno/Escritorio/TP_2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1493333058 source:f:\repo\27-04-2017\tp_laboratorio_1-master\tp_02\tp_2\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1493337370 f:\repo\27-04-2017\tp_laboratorio_1-master\tp_02\tp_2\funciones.h
+
+1493337150 source:f:\repo\27-04-2017\tp_laboratorio_1-master\tp_02\tp_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+

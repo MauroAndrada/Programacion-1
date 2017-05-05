@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1493944662 source:e:\code_utn_fra_2017\laboratorio de computacion 1\primer parcial 04-05-2017\parcial_1_1_e\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+
+1493944642 e:\code_utn_fra_2017\laboratorio de computacion 1\primer parcial 04-05-2017\parcial_1_1_e\lib.h
+	<stdio.h>
+	<stdlib.h>
+
+1493940994 source:e:\code_utn_fra_2017\laboratorio de computacion 1\primer parcial 04-05-2017\parcial_1_1_e\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+
